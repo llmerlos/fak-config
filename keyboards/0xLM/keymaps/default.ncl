@@ -68,7 +68,7 @@ let cu = {
   E_ACF = macro_qa (mt.ralt & kc.N6),
   E_ADI = macro_qa (mt.ralt & mt.lsft & ks.DQUO),
   E_ATI = macro_qa (mt.ralt & mt.lsft & kc.GRV),
-  E_SMT = macro_qa (mt.ralt & mt.lsft & kc.M),
+  E_SMT = macro_qa (mt.ralt & kc.M),
   E_SLI = macro_qa (mt.ralt & kc.BSLS),
   KVM1 = macro_kvm kc.N1,
   KVM2 = macro_kvm kc.N2,
@@ -124,9 +124,9 @@ let keymap = {
     ],
     # AJST
     [
-      TTTTTTTT, cu.E_IEX, cu.E_ACF, cu.E_LL,  cu.D_SHS, me.VOLU,        me.PREV,  kc.INS,   kc.PSCR,  kc.SCRL,  kc.PAUS,  TTTTTTTT, 
-      TTTTTTTT, kc.CAPS,  cu.E_OM,  cu.E_OF,  cu.D_MUT, me.VOLD,        me.PLAY,  TO _BASE, TO _GAME, XXXXXXXX, kc.APP,   TTTTTTTT, 
-      TTTTTTTT, kc.NUBS,  cu.E_ATI, cu.E_DEG, cu.D_SIL, me.MUTE,        me.NEXT,  cu.KVM1,  cu.KVM2,  XXXXXXXX, cu.E_IQM, TTTTTTTT, 
+      TTTTTTTT, cu.E_IEX, cu.E_ACF, cu.E_LL,  cu.D_SHS, me.VOLU,        me.PREV,  cu.E_DEG, kc.INS,   cu.E_OM,  kc.PSCR,  TTTTTTTT, 
+      TTTTTTTT, cu.E_OF,  cu.E_ATI, cu.E_SMT, cu.D_MUT, me.VOLD,        me.PLAY,  TO _BASE, TO _GAME, kc.SCRL,  kc.APP,   TTTTTTTT, 
+      TTTTTTTT, kc.CAPS,  kc.NUBS,  cu.E_SLI, cu.D_SIL, me.MUTE,        me.NEXT,  cu.KVM1,  cu.KVM2,  kc.PAUS,  cu.E_IQM, TTTTTTTT, 
                                     TTTTTTTT, TTTTTTTT, MO _RISE,       MO _LOWR, TTTTTTTT, TTTTTTTT,                   
     ],
   ]
