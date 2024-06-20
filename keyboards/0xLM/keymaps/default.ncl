@@ -96,9 +96,9 @@ let keymap = {
     ],
     # GNUM
     [
-      kc.ESC,   kc.N1,    TTTTTTTT, kc.N2,    kc.N3,    kc.N4,          cu.VD_U,  TTTTTTTT, kc.UP,    TTTTTTTT, cu.VD_R,  cu.AF4, 
-      TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, kc.N5,          cu.VD_L,  kc.LEFT,  kc.DOWN,  kc.RIGHT, TTTTTTTT, TTTTTTTT, 
-      TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, kc.N6,          TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, 
+      kc.ESC,   kc.N1,    TTTTTTTT, kc.N2,    kc.N3,    kc.N4,          cu.VD_U,  TTTTTTTT, TTTTTTTT, TTTTTTTT, cu.VD_R,  TTTTTTTT, 
+      TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, kc.UP,    kc.N5,          cu.VD_L,  TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, 
+      TTTTTTTT, MO _FUNC, kc.N6,    kc.LEFT,  kc.DOWN,  kc.RIGHT,       TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, 
                                     TTTTTTTT, TTTTTTTT, MO _GNUM,       TTTTTTTT, TTTTTTTT, TTTTTTTT,                    
     ],
     # LOWR
@@ -112,14 +112,14 @@ let keymap = {
     [
       TTTTTTTT, cu.VD_L,  kc.HOME,  kc.UP,    kc.END,   cu.VD_U,        ks.CIRC,  ks.AMPR,  ks.ASTR,  ks.LPRN,  ks.RPRN,  TTTTTTTT,   
       TTTTTTTT, kc.ESC,   kc.LEFT,  kc.DOWN,  kc.RIGHT, cu.VD_R,    qp ks.LCBR,qp kc.LBRC,qp kc.RBRC,qp ks.RCBR,ks.COLN,  ks.DQUO,    
-      TTTTTTTT, MO _FUNC, kc.PGDN,qp cu.E_CC, kc.PGUP,  kc.DEL,     qp kc.BSLS,qp ks.PIPE,  ks.LABK,  ks.RABK,  ks.QUES,  TTTTTTTT,   
+      TTTTTTTT, MO _FUNC, kc.PGUP,qp cu.E_CC, kc.PGDN,  kc.DEL,     qp kc.BSLS,qp ks.PIPE,  ks.LABK,  ks.RABK,  ks.QUES,  TTTTTTTT,   
                                     TTTTTTTT, TTTTTTTT, MO _RISE,       MO _LOWR, TTTTTTTT, TTTTTTTT,                     
     ],
     # FUNC
     [
       TTTTTTTT, fk.BOOT,  ms.lsft,  ms.lalt,  ms.ralt,  ms.rsft,        kc.F12,   kc.F7,    kc.F8,    kc.F9,    fk.BOOT,  TTTTTTTT, 
       TTTTTTTT, fk.REST,  ms.lctl,  ms.lgui,  ms.rgui,  ms.rctl,        kc.F11,   kc.F4,    kc.F5,    kc.F6,    fk.REST,  TTTTTTTT, 
-      TTTTTTTT, XXXXXXXX, XXXXXXXX, XXXXXXXX, XXXXXXXX, XXXXXXXX,       kc.F10,   kc.F1,    kc.F2,    kc.F3,    XXXXXXXX, TTTTTTTT, 
+      TTTTTTTT, XXXXXXXX, cu.KVM1,  cu.KVM2,  TO _BASE, TO _GAME,       kc.F10,   kc.F1,    kc.F2,    kc.F3,    XXXXXXXX, TTTTTTTT, 
                                     TTTTTTTT, TTTTTTTT, MO _RISE,       MO _LOWR, TTTTTTTT, TTTTTTTT,                 
     ],
     # AJST
