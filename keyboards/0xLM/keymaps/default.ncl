@@ -17,8 +17,8 @@ let TTTTTTTT = tap.trans & hold.trans in
 let _BASE   = 0 in
 let _GAME   = 1 in
 let _GNUM   = 2 in
-let _LOWR   = 3 in
-let _RISE   = 4 in
+let _RISE   = 3 in
+let _LOWR   = 4 in
 let _FUNC   = 5 in
 let _AJST   = 6 in 
 
@@ -44,6 +44,10 @@ let qp = fun keycode =>
     macro.tap keycode,
   ] in
   macro.make steps
+in
+
+let eu = fun keycode =>
+  mt.ralt & keycode
 in
 
 let cu = {
@@ -96,37 +100,37 @@ let keymap = {
     ],
     # GNUM
     [
-      kc.ESC,   kc.N1,    TTTTTTTT, kc.N2,    kc.N3,    kc.N4,          cu.VD_U,  TTTTTTTT, TTTTTTTT, TTTTTTTT, cu.VD_R,  TTTTTTTT, 
-      TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, kc.UP,    kc.N5,          cu.VD_L,  TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, 
+      kc.ESC,   kc.N1,    TTTTTTTT, kc.N2,    kc.N3,    kc.N4,          TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, 
+      TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, kc.UP,    kc.N5,          TTTTTTTT, cu.VD_L,  cu.VD_U,  cu.VD_R,  TTTTTTTT, TTTTTTTT,
       TTTTTTTT, MO _FUNC, kc.N6,    kc.LEFT,  kc.DOWN,  kc.RIGHT,       TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, TTTTTTTT, 
                                     TTTTTTTT, TTTTTTTT, MO _GNUM,       TTTTTTTT, TTTTTTTT, TTTTTTTT,                    
-    ],
-    # LOWR
-    [
-      TTTTTTTT, ks.EXLM,  ks.AT,    ks.HASH,  ks.DLR,   ks.PERC,        cu.E_AOB, kc.N7,    kc.N8,    kc.N9,    cu.E_ATC, TTTTTTTT,   
-      TTTTTTTT,ks.TILD,qp kc.MINS,qp ks.PLUS,qp kc.EQL, cu.E_PND,       cu.E_ADI, kc.N4,    kc.N5,    kc.N6,    kc.N0,    TTTTTTTT,    
-      TTTTTTTT, kc.GRV,qp kc.SLSH,qp ks.ASTR,qp ks.UNDS,cu.E_EUR,    qp cu.E_NN,  kc.N1,    kc.N2,    kc.N3,    MO _FUNC, TTTTTTTT,   
-                                    TTTTTTTT, TTTTTTTT, MO _RISE,       MO _LOWR, TTTTTTTT, TTTTTTTT,                     
     ],
     # RISE
     [
       TTTTTTTT, cu.VD_L,  kc.HOME,  kc.UP,    kc.END,   cu.VD_U,        ks.CIRC,  ks.AMPR,  ks.ASTR,  ks.LPRN,  ks.RPRN,  TTTTTTTT,   
-      TTTTTTTT, kc.ESC,   kc.LEFT,  kc.DOWN,  kc.RIGHT, cu.VD_R,    qp ks.LCBR,qp kc.LBRC,qp kc.RBRC,qp ks.RCBR,ks.COLN,  ks.DQUO,    
-      TTTTTTTT, MO _FUNC, kc.PGUP,qp cu.E_CC, kc.PGDN,  kc.DEL,     qp kc.BSLS,qp ks.PIPE,  ks.LABK,  ks.RABK,  ks.QUES,  TTTTTTTT,   
+      TTTTTTTT, kc.ESC,   kc.LEFT,  kc.DOWN,  kc.RIGHT, cu.VD_R,   qp ks.PIPE,qp kc.LBRC,qp kc.RBRC,qp ks.LCBR,qp ks.RCBR,qp kc.BSLS,     
+      TTTTTTTT, MO _FUNC, kc.PGUP,qp cu.E_CC, kc.PGDN,  kc.DEL,    qp ks.UNDS,qp kc.EQL, qp ks.PLUS,qp kc.MINS, TTTTTTTT, TTTTTTTT,       
+                                    TTTTTTTT, TTTTTTTT, MO _RISE,       MO _LOWR, TTTTTTTT, TTTTTTTT,                     
+    ],
+    # LOWR
+    [
+      TTTTTTTT, ks.EXLM,  ks.AT,    ks.HASH,  ks.DLR,   ks.PERC,        kc.COMM,  kc.N7,    kc.N8,    kc.N9,    cu.E_AOB, TTTTTTTT,   
+      TTTTTTTT,ks.TILD,qp kc.MINS,qp ks.PLUS, kc.EQL,   TTTTTTTT,       kc.DOT,   kc.N4,    kc.N5,    kc.N6,    kc.N0,    cu.E_ATC,    
+      TTTTTTTT, kc.GRV,qp kc.SLSH,qp ks.ASTR, TTTTTTTT, TTTTTTTT,    qp cu.E_NN,  kc.N1,    kc.N2,    kc.N3,    MO _FUNC, TTTTTTTT,   
                                     TTTTTTTT, TTTTTTTT, MO _RISE,       MO _LOWR, TTTTTTTT, TTTTTTTT,                     
     ],
     # FUNC
     [
-      TTTTTTTT, fk.BOOT,  ms.lsft,  ms.lalt,  ms.ralt,  ms.rsft,        kc.F12,   kc.F7,    kc.F8,    kc.F9,    fk.BOOT,  TTTTTTTT, 
-      TTTTTTTT, fk.REST,  ms.lctl,  ms.lgui,  ms.rgui,  ms.rctl,        kc.F11,   kc.F4,    kc.F5,    kc.F6,    fk.REST,  TTTTTTTT, 
+      TTTTTTTT, fk.BOOT,  ms.lctl,  ms.lsft,  ms.rsft,  ms.rctl,        kc.F12,   kc.F7,    kc.F8,    kc.F9,    fk.BOOT,  TTTTTTTT, 
+      TTTTTTTT, fk.REST,  ms.lgui,  ms.lalt,  ms.ralt,  ms.rgui,        kc.F11,   kc.F4,    kc.F5,    kc.F6,    fk.REST,  TTTTTTTT, 
       TTTTTTTT, XXXXXXXX, cu.KVM1,  cu.KVM2,  TO _BASE, TO _GAME,       kc.F10,   kc.F1,    kc.F2,    kc.F3,    XXXXXXXX, TTTTTTTT, 
                                     TTTTTTTT, TTTTTTTT, MO _RISE,       MO _LOWR, TTTTTTTT, TTTTTTTT,                 
     ],
     # AJST
     [
-      TTTTTTTT, cu.E_IEX, cu.E_ACF, cu.E_LL,  cu.D_SHS, me.VOLU,        me.PREV,  cu.E_DEG, kc.INS,   cu.E_OM,  kc.PSCR,  TTTTTTTT, 
-      TTTTTTTT, cu.E_OF,  cu.E_ATI, cu.E_SMT, cu.D_MUT, me.VOLD,        me.PLAY,  TO _BASE, TO _GAME, kc.SCRL,  kc.APP,   TTTTTTTT, 
-      TTTTTTTT, kc.CAPS,  kc.NUBS,  cu.E_SLI, cu.D_SIL, me.MUTE,        me.NEXT,  cu.KVM1,  cu.KVM2,  kc.PAUS,  cu.E_IQM, TTTTTTTT, 
+      TTTTTTTT, eu kc.N1, eu kc.N2, eu kc.N3, eu kc.N4, eu kc.N5,       eu kc.N6, eu kc.N7, eu kc.N8, eu kc.N9, eu kc.N0, TTTTTTTT,  
+      TTTTTTTT, kc.CAPS,  cu.D_SHS, cu.D_SIL, cu.D_MUT, TTTTTTTT,       kc.SCRL,  kc.PSCR,  kc.INS,   kc.APP, eu ks.COLN, eu kc.SCLN, 
+      TTTTTTTT, kc.NUBS,  me.VOLU,  me.VOLD,  me.MUTE,  TTTTTTTT,       kc.PAUS,  me.PREV,  me.PLAY,  me.NEXT,eu kc.SLSH, TTTTTTTT, 
                                     TTTTTTTT, TTTTTTTT, MO _RISE,       MO _LOWR, TTTTTTTT, TTTTTTTT,                   
     ],
   ]
