@@ -108,15 +108,15 @@ let keymap = {
     # RISE
     [
       TTTTTTTT, cu.VD_L,  kc.HOME,  kc.UP,    kc.END,   cu.VD_U,        ks.CIRC,  ks.AMPR,  ks.ASTR,  ks.LPRN,  ks.RPRN,  TTTTTTTT,   
-      TTTTTTTT, kc.ESC,   kc.LEFT,  kc.DOWN,  kc.RIGHT, cu.VD_R,   qp kc.BSLS,qp kc.LBRC,qp kc.RBRC,qp ks.RCBR,qp ks.COLN,qp ks.DQUO,     
-      TTTTTTTT, MO _FUNC, kc.PGUP,qp cu.E_CC, kc.PGDN,  kc.DEL,    qp ks.PIPE,qp ks.LCBR,qp ks.LABK,qp ks.RABK,qp ks.QUES,TTTTTTTT,       
+      TTTTTTTT, kc.ESC,   kc.LEFT,  kc.DOWN,  kc.RIGHT, cu.VD_R,   qp ks.LCBR,qp ks.RCBR,qp kc.LBRC,qp kc.RBRC,qp ks.COLN,qp ks.DQUO,     
+      TTTTTTTT, MO _FUNC, kc.PGUP,qp cu.E_CC, kc.PGDN,  kc.DEL,    qp kc.BSLS,qp ks.PIPE,qp ks.LABK,qp ks.RABK,qp ks.QUES,TTTTTTTT,       
                                     TTTTTTTT, TTTTTTTT, MO _RISE,       MO _LOWR, TTTTTTTT, TTTTTTTT,                     
     ],
     # LOWR
     [
       TTTTTTTT, ks.EXLM,  ks.AT,    ks.HASH,  ks.DLR,   ks.PERC,        kc.COMM,  kc.N7,    kc.N8,    kc.N9,    cu.E_AOB, TTTTTTTT,   
-      TTTTTTTT, kc.GRV,qp kc.MINS,qp ks.PLUS,qp kc.EQL, XXXXXXXX,       kc.DOT,   kc.N4,    kc.N5,    kc.N6,    kc.N0,    cu.E_ATC,    
-      TTTTTTTT,ks.TILD,qp kc.SLSH,qp ks.ASTR,qp ks.UNDS,XXXXXXXX,    qp cu.E_NN,  kc.N1,    kc.N2,    kc.N3,    MO _FUNC, TTTTTTTT,   
+      TTTTTTTT,ks.TILD,qp kc.MINS,qp ks.PLUS,qp kc.EQL, XXXXXXXX,       kc.DOT,   kc.N4,    kc.N5,    kc.N6,    kc.N0,    cu.E_ATC,    
+      TTTTTTTT, kc.GRV,qp kc.SLSH,qp ks.ASTR,qp ks.UNDS,XXXXXXXX,    qp cu.E_NN,  kc.N1,    kc.N2,    kc.N3,    MO _FUNC, TTTTTTTT,   
                                     TTTTTTTT, TTTTTTTT, MO _RISE,       MO _LOWR, TTTTTTTT, TTTTTTTT,                     
     ],
     # FUNC
