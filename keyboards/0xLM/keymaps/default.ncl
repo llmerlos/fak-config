@@ -108,8 +108,8 @@ let keymap = {
     # RISE
     [
       TTTTTTTT, cu.VD_L,  kc.HOME,  kc.UP,    kc.END,   cu.VD_U,        ks.CIRC,  ks.AMPR,  ks.ASTR,  ks.LPRN,  ks.RPRN,  TTTTTTTT,   
-      TTTTTTTT, kc.ESC,   kc.LEFT,  kc.DOWN,  kc.RIGHT, cu.VD_R,   qp ks.LCBR,qp ks.RCBR,qp kc.LBRC,qp kc.RBRC,qp ks.COLN,qp ks.DQUO,     
-      TTTTTTTT, MO _FUNC, kc.PGUP,qp cu.E_CC, kc.PGDN,  kc.DEL,    qp kc.BSLS,qp ks.PIPE,qp ks.LABK,qp ks.RABK,qp ks.QUES,TTTTTTTT,       
+      TTTTTTTT, kc.ESC,   kc.LEFT,  kc.DOWN,  kc.RIGHT, cu.VD_R,   qp ks.PIPE,qp kc.LBRC,qp kc.RBRC,qp ks.RCBR,qp ks.COLN,qp ks.DQUO,     
+      TTTTTTTT, MO _FUNC, kc.PGUP,qp cu.E_CC, kc.PGDN,  kc.DEL,    qp kc.BSLS,qp ks.LCBR,qp ks.LABK,qp ks.RABK,qp ks.QUES,TTTTTTTT,       
                                     TTTTTTTT, TTTTTTTT, MO _RISE,       MO _LOWR, TTTTTTTT, TTTTTTTT,                     
     ],
     # LOWR
