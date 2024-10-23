@@ -114,8 +114,8 @@ let keymap = {
     ],
     # LOWR
     [
-      TTTTTTTT, ks.EXLM,  ks.AT,    ks.HASH,  ks.DLR,   ks.PERC,        kc.COMM,  kc.N7,    kc.N8,    kc.N9,    cu.E_AOB, TTTTTTTT,   
-      TTTTTTTT,ks.TILD,qp kc.MINS,qp ks.PLUS,qp kc.EQL, XXXXXXXX,       kc.DOT,   kc.N4,    kc.N5,    kc.N6,    kc.N0,    cu.E_ATC,    
+      TTTTTTTT, ks.EXLM,  ks.AT,    ks.HASH,  ks.DLR,   ks.PERC,        cu.E_ACF, kc.N7,    kc.N8,    kc.N9,    cu.E_AOB, TTTTTTTT,   
+      TTTTTTTT,ks.TILD,qp kc.MINS,qp ks.PLUS,qp kc.EQL, XXXXXXXX,       ms.ralt,  kc.N4,    kc.N5,    kc.N6,    kc.N0,    cu.E_ATC,    
       TTTTTTTT, kc.GRV,qp kc.SLSH,qp ks.ASTR,qp ks.UNDS,XXXXXXXX,    qp cu.E_NN,  kc.N1,    kc.N2,    kc.N3,    MO _FUNC, TTTTTTTT,   
                                     TTTTTTTT, TTTTTTTT, MO _RISE,       MO _LOWR, TTTTTTTT, TTTTTTTT,                     
     ],
