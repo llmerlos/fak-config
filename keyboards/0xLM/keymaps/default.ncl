@@ -88,15 +88,15 @@ let keymap = {
     [
       kc.TAB,   kc.Q,     kc.W,     kc.E,     kc.R,     kc.T,           kc.Y,     kc.U,     kc.I,     kc.O,     kc.P,     kc.ENT,     
       md.lctl,  kc.A,     kc.S,     kc.D,     kc.F,     kc.G,           kc.H,     kc.J,     kc.K,     kc.L,     kc.SCLN,  kc.QUOT,     
-      md.lsft,  kc.Z,     kc.X,     kc.C,     kc.V,     kc.B,           kc.N,     kc.M,     kc.COMM,  kc.DOT,   kc.SLSH,  md.rsft,     
-                                    md.lgui,  kc.SPC,   MO _RISE,       MO _LOWR, kc.BSPC,  md.lalt,                     
+      md.lsft,  kc.Z,     kc.X,     kc.C,     kc.V,     kc.B,           kc.N,     kc.M,     kc.COMM,  kc.DOT,   kc.SLSH,  md.lgui,     
+                                    md.lalt,  kc.SPC,   MO _RISE,       MO _LOWR, kc.BSPC,  md.rsft,                     
     ],
     # GAME    
     [
       kc.TAB,   kc.Q,     kc.W,     kc.E,     kc.R,     kc.T,           kc.Y,     kc.U,     kc.I,     kc.O,     kc.P,     kc.ENT,     
       md.lctl,  kc.A,     kc.S,     kc.D,     kc.F,     kc.G,           kc.H,     kc.J,     kc.K,     kc.L,     kc.SCLN,  kc.QUOT,     
-      md.lsft,  kc.Z,     kc.X,     kc.C,     kc.V,     kc.B,           kc.N,     kc.M,     kc.COMM,  kc.DOT,   kc.SLSH,  md.rsft,     
-                                    md.lalt,  kc.SPC,   MO _GNUM,       MO _LOWR, kc.BSPC,  md.lgui,                    
+      md.lsft,  kc.Z,     kc.X,     kc.C,     kc.V,     kc.B,           kc.N,     kc.M,     kc.COMM,  kc.DOT,   kc.SLSH,  md.lgui,     
+                                    md.lalt,  kc.SPC,   MO _GNUM,       MO _LOWR, kc.BSPC,  md.rsft,                    
     ],
     # GNUM
     [
@@ -107,7 +107,7 @@ let keymap = {
     ],
     # RISE
     [
-      TTTTTTTT, cu.VD_L,  kc.HOME,  kc.UP,    kc.END,   cu.VD_U,        ks.CIRC,  ks.AMPR,  ks.ASTR,  ks.LPRN,  ks.RPRN,  TTTTTTTT,   
+      TTTTTTTT, cu.VD_L,  kc.HOME,  kc.UP,    kc.END,   cu.VD_U,        ks.CIRC, ks.AMPR,  ks.ASTR,  ks.LPRN,  ks.RPRN,   TTTTTTTT,   
       TTTTTTTT, kc.ESC,   kc.LEFT,  kc.DOWN,  kc.RIGHT, cu.VD_R,   qp ks.PIPE,qp kc.LBRC,qp kc.RBRC,qp ks.RCBR,qp ks.COLN,qp ks.DQUO,     
       TTTTTTTT, MO _FUNC, kc.PGUP,qp cu.E_CC, kc.PGDN,  kc.DEL,    qp kc.BSLS,qp ks.LCBR,qp ks.LABK,qp ks.RABK,qp ks.QUES,TTTTTTTT,       
                                     TTTTTTTT, TTTTTTTT, MO _RISE,       MO _LOWR, TTTTTTTT, TTTTTTTT,                     
